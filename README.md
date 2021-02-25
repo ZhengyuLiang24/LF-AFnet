@@ -32,7 +32,7 @@ $ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2
 ## Test on your own LFs
 We provide our pretrained models. You can run `demo.py` to easily perform network inference, and your LFs saved in `./demo/` will be super-resolved. The output will be saved in`./demo_result/`. Note that, the angular resolution (i.e., angRes) of your LFs is required.
 ```
-$ python demo.py --model_name LF_AFnet --scale_factor 2 --use_pre_ckpt True  ./LF_AFnet_x2_epoch_50_model.pth --path_demo ./demo/ --angRes_demo 5 --path_demo_result ./demo_result/ 
+$ python demo.py --model_name LF_AFnet --scale_factor 2 --use_pre_ckpt True  --path_pre_pth ./LF_AFnet_x2_epoch_50_model.pth --path_demo ./demo/ --angRes_demo 5 --path_demo_result ./demo_result/ 
 ```
 ```
 $ python demo.py --model_name LF_AFnet --scale_factor 4 --use_pre_ckpt True --path_pre_pth ./LF_AFnet_x4_epoch_50_model.pth --path_demo ./demo/ --angRes_demo 5 --path_demo_result ./demo_result/ 
