@@ -43,7 +43,7 @@ def main(args):
 
     print('\nStart ...')
     img_list = os.listdir(args.path_demo)
-    angRes = args.angRes_demo
+    angRes = args.angRes
     for index, _ in enumerate(img_list):
         img_dir = args.path_demo + img_list[index]
         img = mp.imread(img_dir)
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     parser.add_argument("--channels", type=int, default=64, help="channels")
     parser.add_argument("--use_pre_ckpt", type=bool, default=True, help="use pre model ckpt")
     parser.add_argument('--path_demo', type=str, default='./demo/')
-    parser.add_argument('--angRes_demo', type=int, default='5')
+    parser.add_argument('--angRes', type=int, default='5')
     parser.add_argument('--path_demo_result', type=str, default='./demo_result/')
     parser.add_argument("--path_pre_pth", type=str, default='./LF_AFnet_x4_epoch_50_model.pth',
                         help="use pre model ckpt")
