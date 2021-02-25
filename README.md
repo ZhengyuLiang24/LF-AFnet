@@ -22,10 +22,10 @@ We used the EPFL, HCInew, HCIold, INRIA and STFgantry datasets for both training
 
 We also provide the solution of distributed GPUs. Technically there are no limits to the operation system to run the code, but Linux system is recommended, on which the project has been tested.
 ```
-CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py --model_name LF_AFnet --scale_factor 2 --data_name ALL --batch_size 2 --use_pre_ckpt True --path_pre_pth ./LF_AFnet_x2_epoch_50_model.pth --path_demo ./demo/ --angRes_demo 5 --path_demo_result ./demo_result/ 
+$ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py --model_name LF_AFnet --scale_factor 2 --data_name ALL --batch_size 2 --use_pre_ckpt True --path_pre_pth ./LF_AFnet_x2_epoch_50_model.pth --path_demo ./demo/ --angRes_demo 5 --path_demo_result ./demo_result/ 
 ```
 ```
-CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py --model_name LF_AFnet --scale_factor 4 --data_name ALL --batch_size 2 --use_pre_ckpt True --path_pre_pth ./LF_AFnet_x4_epoch_50_model.pth --path_demo ./demo/ --angRes_demo 5 --path_demo_result ./demo_result/ 
+$ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py --model_name LF_AFnet --scale_factor 4 --data_name ALL --batch_size 2 --use_pre_ckpt True --path_pre_pth ./LF_AFnet_x4_epoch_50_model.pth --path_demo ./demo/ --angRes_demo 5 --path_demo_result ./demo_result/ 
 ```
 
 
