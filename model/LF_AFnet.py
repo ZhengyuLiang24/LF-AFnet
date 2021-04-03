@@ -168,7 +168,8 @@ def SaiDelPadding(x, angRes):
 def SaiClearPadding(x, angRes):
     B, C, H, W = x.shape
     h, w = H // angRes, W // angRes
-    x[:,:, h:angRes:, w:angRes:] = 0
+    x[:, :, h - 1::h, :] = 0
+    x[:, :, :, w - 1::w] = 0
 
     return x
 
