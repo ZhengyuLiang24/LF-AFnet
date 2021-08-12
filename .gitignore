@@ -1,7 +1,0 @@
-datasets/*
-data_for_train/*
-data_for_test/*
-log/*
-
-__pycache__/
-.idea/
