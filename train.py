@@ -8,7 +8,7 @@ from utils.utils import *
 from utils.utils_datasets import TrainSetDataLoader, MultiTestSetDataLoader
 from collections import OrderedDict
 import argparse
-import numpy as np
+import numpy as np 
 
 def main(args):
     def log_string(str):
