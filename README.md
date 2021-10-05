@@ -41,7 +41,15 @@ $ python demo.py --model_name LF_AFnet --scale_factor 4 --use_pre_ckpt True --pa
 
 ## Citiation
 **If you find this work helpful, please consider citing the following paper:**
-
+```
+@article{LF_AFnet,
+  title={Angular-flexible network for light field image super-resolution},
+  author={Liang, Zhengyu and Wang, Yingqian and Wang, Longguang and Yang, Jungang and Zhou, Shilin},
+  journal={Electronics Letters},
+  publisher={Wiley Online Library}
+}
+```
+<br>
 ## Acknowledgement
 **The imresize part of our code is referred from [matlab_imresize](https://github.com/fatheral/matlab_imresize). We thank the author for sharing codes.**
 
